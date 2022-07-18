@@ -1,4 +1,3 @@
-
 const article = ({ article }: any) => {
     return (
         <div>

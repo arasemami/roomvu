@@ -1,8 +1,7 @@
 import { useDispatch } from "react-redux";
 import { SwitchTheme } from "./redux/actions/themes";
-import { useTheme } from "./redux/selectors/themes";
-import useLocalStorage from "use-local-storage";
 import { useEffect } from "react";
+import useLocalStorage from "use-local-storage";
 
 function Header() {
     let dispatch = useDispatch();
@@ -16,8 +15,6 @@ function Header() {
     useEffect(() => {
         dispatch(SwitchTheme(themeOnLocal));
     });
-
-
 
     return (
         <div className="header-text">

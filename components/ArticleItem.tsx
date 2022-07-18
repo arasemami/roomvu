@@ -12,5 +12,7 @@ export default function ArticleItem({ article }: any) {
             <p>{article.body}</p>
             <p>{article.id}</p>
         </div>
+
+
     )
 }
